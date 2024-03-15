@@ -3,8 +3,8 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>org.abc</groupId>
-        <artifactId>com.flipkart</artifactId>
+        <groupId>com.flipkart</groupId>
+        <artifactId>flipkart</artifactId>
         <version>1.0-SNAPSHOT</version>
     </parent>
 
@@ -15,9 +15,54 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.abc</groupId>
-            <artifactId>validation</artifactId>
-            <version>${project.parent.version}</version>
+            <groupId>org.osgi</groupId>
+            <artifactId>osgi.core</artifactId>
+            <version>8.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.logging.log4j</groupId>
+            <artifactId>log4j-core</artifactId>
+            <version>2.22.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.orm</groupId>
+            <artifactId>hibernate-core</artifactId>
+            <version>6.4.2.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.core</groupId>
+            <artifactId>jackson-core</artifactId>
+            <version>2.14.1</version>
+        </dependency>
+        <dependency>
+            <groupId>com.fasterxml.jackson.jaxrs</groupId>
+            <artifactId>jackson-jaxrs-json-provider</artifactId>
+            <version>2.14.1</version>
+        </dependency>
+        <dependency>
+            <groupId>org.hibernate.validator</groupId>
+            <artifactId>hibernate-validator</artifactId>
+            <version>8.0.1.Final</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.validation</groupId>
+            <artifactId>jakarta.validation-api</artifactId>
+            <version>3.1.0-M1</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.persistence</groupId>
+            <artifactId>jakarta.persistence-api</artifactId>
+            <version>3.0.0</version>
+        </dependency>
+        <dependency>
+            <groupId>jakarta.ws.rs</groupId>
+            <artifactId>jakarta.ws.rs-api</artifactId>
+            <version>3.1.0</version>
+        </dependency>
+        <dependency>
+            <groupId>org.apache.cxf</groupId>
+            <artifactId>cxf-rt-frontend-jaxrs</artifactId>
+            <version>4.0.4</version>
         </dependency>
         <dependency>
             <groupId>org.abc</groupId>
@@ -26,17 +71,7 @@
         </dependency>
         <dependency>
             <groupId>org.abc</groupId>
-            <artifactId>singleton-scanner</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.abc</groupId>
-            <artifactId>db-connection</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.abc</groupId>
-            <artifactId>page-view</artifactId>
+            <artifactId>database</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
         <dependency>
@@ -47,11 +82,6 @@
         <dependency>
             <groupId>org.abc</groupId>
             <artifactId>product</artifactId>
-            <version>${project.parent.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.abc</groupId>
-            <artifactId>launcher</artifactId>
             <version>${project.parent.version}</version>
         </dependency>
     </dependencies>
